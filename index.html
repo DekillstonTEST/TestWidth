@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="block" align="center" id="text_Wid"></div>
+	<script>
+		function setINwid() {
+			var wid = document.documentElement.clientWidth;
+			var textWid = document.getElementById('text_Wid');
+			textWid.textContent = '';
+			textWid.textContent = wid;
+			textWid.style.fontSize = '80px';
+		}
+		setInterval(setINwid, 200)
+	</script>
+</html>
